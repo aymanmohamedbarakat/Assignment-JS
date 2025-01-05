@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="control">
+      <div class="control-panel">
+        <div class="screen">
+          <div class="auto-control">
+            <h1>AUTO</h1>
+          </div>
+          <div class="screen-temp">
+            <div id="tempScreen" class="temprture"><h2>--&deg;c</h2></div>
+            <div id="fanScreen" class="swing"><h2>--</h2></div>
+          </div>
+          <div class="status-temp"><img src="./image/cold.png" alt="" /></div>
+        </div>
+        <div class="buttons">
+          <div class="top">
+            <button onclick="incrementTemp()" class="button">
+              <svg
+                viewBox="0 -960 960 960"
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg2"
+              >
+                <path
+                  d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+                ></path>
+              </svg>
+            </button>
+            <button onclick="toggleAc()" class="button red button_text">
+              ON/OFF
+            </button>
+            <button onclick="decrementTemp()" class="button">
+              <svg
+                viewBox="0 -960 960 960"
+                class="svg1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M200-440v-80h560v80H200Z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bottom">
+            <div class="right">
+              <button class="button">MODE</button>
+              <button onclick="toggleFan()" id="fanScreen" class="button">
+                FAN
+              </button>
+            </div>
+            <div class="center">
+              <button class="button centerr">TEMP</button>
+            </div>
+            <div class="left">
+              <button class="button">SWING</button>
+              <button class="button">TURBO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

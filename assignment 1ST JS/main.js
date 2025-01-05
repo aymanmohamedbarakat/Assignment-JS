@@ -33,13 +33,31 @@
 //******************************************* */
 // THE ASSIGNMENT
 //******************************************* */
+
+
+// let price = prompt("enter price");
+// let discount = prompt("enter discount");
+
+
+// let tex = discount * 14/100 ;
+// let dicountPrice = (price * discount/100) + tex;
+
+// console.log("ur price:" + dicountPrice);
+
+// document.write("ur price:" + dicountPrice)
+
 let price = prompt("enter price");
-let discount = prompt("enter discount");
+let discount = prompt("enter discount")/100;
+
+let discountFromPrice = price * discount;
+
+let discountAfterPrice =  price - discountFromPrice ;
+
+let addTex = discountAfterPrice * (14/100);
+
+let finalValue = discountAfterPrice + addTex;
 
 
-let tex = discount * 14/100 ;
-let dicountPrice = (price * discount/100) + tex;
+console.log("ur price:" + finalValue);
 
-console.log("ur price:" + dicountPrice);
-
-document.write("ur price:" + dicountPrice)
+document.write("ur price:" + finalValue)
