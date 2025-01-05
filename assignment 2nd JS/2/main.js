@@ -72,10 +72,6 @@ default:{
 }
 }
 
-zzz
-
-
-
 
 // let price = Number(prompt("Enter price "));
 // let price = +prompt("Enter price ");
