@@ -16,7 +16,7 @@ let calcDegree = () => {
 
     if (Degree >= 90 ){
       GPA = 'A (Excellent)'
-      resultShow.style.color = '#198754';  // Bootstrap success color
+      resultShow.style.color = '#198754'; 
     } else if (Degree >= 75){
       GPA = 'B (Very Good)'
       resultShow.style.color = '#0d6efd'; 
